@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body,
+html {
+  width: 100%;
+  height: 200vh;
+  background-color: #fff;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  height: 10%;
+}
+
+ul {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.lightbulb {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  pointer-events: none;
+  transition: all ease-out 0.4s;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  /* animation: cursorAnim 0.5s infinite alternate; */
+}
+
+li:hover {
+  cursor: pointer;
+}
+li:hover + .lightbulb {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+}
+/* .shrink {
+  width: 10px;
+  height: 10px;
+  transition: all 0.2s;
+} */
+
+/* .cursor::after {
+
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 8px solid gray;
+  border-radius: 50%;
+  top: -8px;
+  left: -8px;
+  opacity: 0.5;
+
+  animation: cursorAnim2 0.5s infinite alternate;
+} */
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+.ico {
+  background: #ccc;
+  position: absolute;
+  display: inline-block;
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+.lightbulb:hover > .ico {
+  background: #333;
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+
+.ico-lightbulb {
+  border-radius: 100%;
+  height: 1.26em;
+  width: 1.16em;
+}
+
+.ico-lightbulb1 {
+  height: 0.2em;
+  width: 0.6em;
+  top: 1.05em;
+  left: 0.3em;
+}
+.ico-lightbulb2 {
+  height: 0.12em;
+  width: 0.6em;
+  top: 1.3em;
+  left: 0.3em;
+}
+.ico-lightbulb3 {
+  height: 0.12em;
+  width: 0.55em;
+  top: 1.5em;
+  left: 0.32em;
+}
+.ico-lightbulb4 {
+  height: 0.06em;
+  width: 0.26em;
+  top: 1.7em;
+  left: 0.46em;
+}
